@@ -2,11 +2,11 @@
 FROM python:3.9-slim
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /app1
 
 # Copy the current directory contents into the container at /app
-COPY . /app
-COPY requirement.txt /app
+COPY . /app1
+COPY requirement.txt /app1
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirement.txt
